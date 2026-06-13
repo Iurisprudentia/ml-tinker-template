@@ -1,0 +1,21 @@
+[project]
+name = "ml-tinker"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy", "pandas", "polars", "pyarrow", "duckdb",
+    "scikit-learn", "xgboost", "lightgbm",
+    "matplotlib", "seaborn",
+    "mlflow",
+    "jupyterlab",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ml_tinker"]
+
+[tool.ruff]
+line-length = 100
